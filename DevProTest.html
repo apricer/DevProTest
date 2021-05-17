@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Proficiency Test - Pricer</title>
+</head>
+
+<body>
+
+    <form name="Fahrenheit to Celsius">
+
+        <h3>
+            <font color="green">Fahrenheit to Celsius Converter</font>
+        </h3>
+
+        <div>
+            <label>Fahrenheit</label>
+            <input type="TEXT" id="fahrenheit">
+            <input type="button" Value="Convert" onclick="convert()">
+        </div>
+
+        <br>
+
+        <label>Celsius</label>
+
+        <br>
+        <br>
+
+        <label>lbltoCelsius</label>
+        <input type="text" id="celsius">
+
+
+    </form>
+
+    <script>
+
+        function convert() {
+
+            var fahrenheit = document.getElementById("fahrenheit").value
+
+            var celsius;
+
+            if (fahrenheit != '') {
+
+                celsius = (fahrenheit - 32) * 5 / 9;
+
+                document.getElementById("celsius").value = Math.round(celsius);
+
+            } else {
+
+                alert("Please enter a value!");
+
+            }
+
+        }
+
+    </script>
+</body>
+
+</html>
